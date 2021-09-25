@@ -1,20 +1,59 @@
-header {
-    background-color: black;
-    color: #f0f0f0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-body {
-    background-color: #f0f0f0;
+.clr{
+    clear:both;
+}
+
+#main-header {
+    background-color: black;
+    color: #ddd;
     text-align: center;
+    font-family: tahoma;
+    padding: 2em;
 }
 
-footer {
-    
-    background-color: black;
-    color: #f0f0f0;
+#blackjackName {
+    color:red;
 }
 
-.container {
-    width: 80%;
-    margin:auto;
+#headerSubtitle{
+    color:#aaa;
 }
+
+.container{
+    text-align:center;
+} 
+
+.button {
+    background-color:#ddd;
+    color: black;
+    padding: 10px 15px;
+    margin: 10px;
+    border: none; 
+}
+
+.button:hover {
+    background-color:#aaa;
+}
+
+.button:active{
+    background-color: red;
+    color: white;
+}
+
+#showRuleButton{
+    visibility:visible;
+}
+/* #hideRuleButton{
+    visibility:hidden;
+} */
+
+.rules {
+    visibility: hidden;
+}
+
+
+

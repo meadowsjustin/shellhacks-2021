@@ -7,12 +7,12 @@
     <script src="./index.js" defer></script>
 </head>
 
-<body id="body">
+<body class="body">
     <div class="container">
-        <header id="header">
+        <header id="main-header">
             <br>
-            <h1>Test Your Luck!</h1>
-            <h3>Is fate on your side?</h3>
+            <h1>Test Your Luck in <strong id="blackjackName">BLACKJACK</strong>!</h1>
+            <h3 id="headerSubtitle">Is fate on your side?</h3>
             <br>
         </header>
 
@@ -20,18 +20,42 @@
         <hr>
         <br>
 
-        <button id="dealButton" type="button">DEAL</button>
+        <div class="startMenuButtons">
+            <div><button class="button" id="dealButton" type="button">DEAL</button></div>
+            <div><button class="button" id="showRuleButton" type="button">SHOW RULES</button></div>
+            <!-- <div><button class="button" id="hideRuleButton" type="button">HIDE RULES</button></div> -->
+        </div>
 
-        <button id="rules" type="button">RULES</button>
+        <div class="clr"></div>
+        
+
+        <section class="rules">
+            <h2>Rules</h2>
+            <ol>
+                <p class="rule-sub">Objective</p>
+                <li cite="https://bicyclecards.com/how-to-play/blackjack/">The objective is to attempt to beat the dealer by getting as close to 21 as possible by "hitting" or "standing", without going over 21. You must also get higher than the dealer.</li>
+
+                <p class="rule-sub">Card Values/Scoring</p>
+                <li>It is up to the player whether an ace is worth 1 or 11. Face cards are 10, and any other card is its pip value.</li>
+
+                <p class="rule-sub">The Deal</p>
+                <li>You are dealt two face-up cards, while the dealer is dealt two cards, with one face-up and one face-down.</li>
+
+                <p class="rule-sub">Hitting or Standing</p>
+                <li>You must decide whether to "stand" (not ask for another card) or "hit" (ask for another card in an attempt to get closer to a count of 21, or even hit 21 exactly). Thus, a player may stand on the two cards originally dealt to them, or they may ask the dealer for additional cards, one at a time, until deciding to stand on the total (if it is 21 or under), or goes "bust" (if it is over 21).</li>
+
+            </ol>
+        </section>
+
         <br>
         <br>
-        <button id="hitButton" type="button">HIT</button>
-        <button id="standButton" type="button">STAND</button>
+        <button class="button" id="hitButton" type="button">HIT</button>
+        <button class="button" id="standButton" type="button">STAND</button>
         <br>
         <br>
 
 
-        <footer>
+        <footer id="main-footer">
             <br>
             <p>(Totally Real) Copyright &copy; 2021, ShellHacks</p>
             <br>

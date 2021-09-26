@@ -5,6 +5,7 @@
     <title>Blackjack Starting Screen</title>
     <link rel="stylesheet" type="text/css" href="./index.css">
     <script src="./index.js" defer></script>
+    <script src="./deal.js" defer></script>
 </head>
 
 <body class="body">
@@ -21,7 +22,7 @@
         <br>
 
         <div class="startMenuButtons">
-            <div><button class="button" id="dealButton" type="button">DEAL</button></div>
+            <div><button class="button" id="dealButton" type="button">DEAL!</button></div>
             <div><button class="button" id="rulesButton" type="button">SHOW RULES</button></div>
         </div>
 
@@ -48,20 +49,21 @@
                 </div>
         </section>
 
-        <br>
-        <br>
-        <div>
+        <div id="gameSpace">
+            <img class="card" id="deck" src="images/playingCards/cardBack.png" alt="cardBack">
+            <p id="counter">-</p>
+            <p id="dealerCounter">-</p>
+        </div>
+
+        <div id="choices">
             <button class="button" id="hitButton" type="button">HIT</button>
             <button class="button" id="standButton" type="button">STAND</button>
+            <button class="button" id="playAgain" type="button">PLAY AGAIN</button>
         </div>
-        <br>
-        <br>
 
 
         <footer id="main-footer">
-            <br>
             <p>(Totally Real) Copyright &copy; 2021, ShellHacks</p>
-            <br>
         </footer>
     </div>
 

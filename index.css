@@ -19,7 +19,7 @@
     position:fixed;
     left:30%;
     right:30%;
-    bottom:0px;
+    bottom:10px;
     display: inline;
 }
 
@@ -98,13 +98,61 @@
     margin-right:auto;
 }
 
-#hitButton {
-    display:none;
+#gameSpace {
+    width:80%;
+    position:relative;
+    height:auto;
+    margin:auto;
+    /* border:1px black solid; */
 }
 
-#standButton {
+#choices{
     display:none;
+    position:fixed;
+    bottom:50px;
+    left:30%;
+    right:30%;
+    margin:auto;
 }
 
+.card {
+    max-height:12em;
+    width:132.219px;
+    position:absolute;
+    padding:10px;
+}
 
+#deck {
+    filter:drop-shadow(0px 11px 0px #444);
+    position:absolute;
+    right: 0px;
+    top:10px;
+    visibility:hidden;
+}
 
+#counter {
+    visibility: hidden;
+    position:absolute;
+    color: red;
+    font-size:5em;
+    top:313px;
+    right:0px;
+    left:0px;
+    bottom:0px;
+    z-index: 100;
+}
+#dealerCounter {
+    visibility: hidden;
+    position:absolute;
+    color: red;
+    font-size:5em;
+    top:237px;
+    right:0px;
+    left:0px;
+    bottom:0px;
+    z-index: 100;
+}
+
+#playAgain {
+    display:none;
+}

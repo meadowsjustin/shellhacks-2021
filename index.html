@@ -22,35 +22,38 @@
 
         <div class="startMenuButtons">
             <div><button class="button" id="dealButton" type="button">DEAL</button></div>
-            <div><button class="button" id="showRuleButton" type="button">SHOW RULES</button></div>
-            <!-- <div><button class="button" id="hideRuleButton" type="button">HIDE RULES</button></div> -->
+            <div><button class="button" id="rulesButton" type="button">SHOW RULES</button></div>
         </div>
 
         <div class="clr"></div>
         
 
-        <section class="rules">
+        <section id="rules">
             <h2>Rules</h2>
-            <ol>
-                <p class="rule-sub">Objective</p>
-                <li cite="https://bicyclecards.com/how-to-play/blackjack/">The objective is to attempt to beat the dealer by getting as close to 21 as possible by "hitting" or "standing", without going over 21. You must also get higher than the dealer.</li>
-
-                <p class="rule-sub">Card Values/Scoring</p>
-                <li>It is up to the player whether an ace is worth 1 or 11. Face cards are 10, and any other card is its pip value.</li>
-
-                <p class="rule-sub">The Deal</p>
-                <li>You are dealt two face-up cards, while the dealer is dealt two cards, with one face-up and one face-down.</li>
-
-                <p class="rule-sub">Hitting or Standing</p>
-                <li>You must decide whether to "stand" (not ask for another card) or "hit" (ask for another card in an attempt to get closer to a count of 21, or even hit 21 exactly). Thus, a player may stand on the two cards originally dealt to them, or they may ask the dealer for additional cards, one at a time, until deciding to stand on the total (if it is 21 or under), or goes "bust" (if it is over 21).</li>
-
-            </ol>
+                <div class="rule-block">
+                    <p class="rule-sub">Objective</p>
+                    <p cite="https://bicyclecards.com/how-to-play/blackjack/" class="rule">The objective is to attempt to beat the dealer by getting as close to 21 as possible by "hitting" or "standing", without going over 21. You must also get higher than the dealer.</p>
+                </div>
+                <div class="rule-block">
+                    <p class="rule-sub">Card Values/Scoring</p>
+                    <p class="rule">It is up to the player whether an ace is worth 1 or 11. Face cards are 10, and any other card is its pip value.</p>
+                </div>
+                <div class="rule-block">
+                    <p class="rule-sub">The Deal</p>
+                    <p class="rule">You are dealt two face-up cards, while the dealer is dealt two cards, with one face-up and one face-down.</p>
+                </div>
+                <div class="rule-block">
+                    <p class="rule-sub">Hitting or Standing</p>
+                    <p class="rule">You must decide whether to "stand" (not ask for another card) or "hit" (ask for another card in an attempt to get closer to a count of 21, or even hit 21 exactly). Thus, a player may stand on the two cards originally dealt to them, or they may ask the dealer for additional cards, one at a time, until deciding to stand on the total (if it is 21 or under), or goes "bust" (if it is over 21).</p>
+                </div>
         </section>
 
         <br>
         <br>
-        <button class="button" id="hitButton" type="button">HIT</button>
-        <button class="button" id="standButton" type="button">STAND</button>
+        <div>
+            <button class="button" id="hitButton" type="button">HIT</button>
+            <button class="button" id="standButton" type="button">STAND</button>
+        </div>
         <br>
         <br>
 

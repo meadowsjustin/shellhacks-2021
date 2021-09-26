@@ -1,7 +1,8 @@
 let dealButton = document.getElementById("dealButton");
-let rulesButton = document.getElementById("rules");
+let rulesButton = document.getElementById("rulesButton");
+let rules = document.getElementById("rules");
 let hitButton = document.getElementById("hitButton");
-let standButton = document.getElementById("standButton")
+let standButton = document.getElementById("standButton");
 
 let inGame = false;
 let playerCardNum;
@@ -10,25 +11,45 @@ let dealerCards = [];
 let playerCards = [];
 let dealerTotal = 0;
 
+rules.style.display = "none";
+rulesButton.addEventListener("click", () => {
+
+    if(rules.style.display === "none") {
+        rules.style.display = "block";
+        rulesButton.innerText = "HIDE RULES";
+    } else {
+        rules.style.display = "none";
+        rulesButton.innerText = "SHOW RULES";
+    }
+    console.log("Rules button Click");
+
+
+});
+
 
 dealButton.addEventListener("click", function () {
-    dealButton = document.getElementById("dealButton").style.visibility = "hidden";
-    rulesButton = document.getElementById("rules").style.visibility = "hidden";
+    dealButton.style.display = "none";
+    rulesButton.style.display = "none";
+    rules.style.display = "none";
     console.log("The game is running");
 
     inGame = true;
+
+    hitButton.style.display = "inline";
+    standButton.style.display = "inline";
+
     playerCardNum = 0;
     dealerCardNum = 0;
 
     // Dealer's initial cards
     dealerCards[0] = generateCard();
     dealerCards[1] = "flipped";
-    dealerCardNum = 1
+    dealerCardNum = 2;
 
     // Player's initial cards
     playerCards[0] = generateCard();
     playerCards[1] = generateCard();
-    playerCardNum = 2
+    playerCardNum = 2;
 });
 
 
@@ -36,11 +57,13 @@ dealButton.addEventListener("click", function () {
 hitButton.addEventListener("click", function () {
     playerCards[playerCardNum] = generateCard();
     playerCardNum++;
+    console.log(playerCardNum);
 });
 
 
 standButton.addEventListener("click", function () {
 
+    /* Dealer plays their turn*/
     while (dealerTotal < 17) {
         dealerCards[dealerCardNum] = generateCard();
         dealerCardNum++;
